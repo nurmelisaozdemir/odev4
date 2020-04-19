@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="genel">
+
+        
+        <div class="ust">
+            <img src="img/html.png" style="width:180px"/>
+            <h1 style="text-align: center;" >   JAVASCRIPT   </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                
+                <li><a href="kullanıcıFormu.html">Kullanıcı Formu</a></li>
+                <li><a href="alisverisListesi.html">Alışveriş Listesi</a></li>
+                <li><a href="element.html">Element Ekle</a></li>
+                <li><a href="index.html" > Login</a></li>
+                <li><a href="syntax.html" > Syntax</a></li>  
+                <li><a href="degiskenler.html" > Variables</a></li> 
+                <li><a href="operator.html" > Operators</a></li> 
+                <li><a href="arithmetic.html" > Arithmetic</a></li>
+                <li><a href="datatypes.html" > Data Types</a></li>
+                <li><a href="function.html" > Function structure</a></li>    
+                <li><a href="events.html" >Events</a></li>    
+                <li><a href="loops.html" > Loops</a></li> 
+                <li><a href="diziler.html">Diziler</a></li>      
+                <li><a href="ifkosul.html">İf-Koşul Yapısı</a></li> 
+                
+            </ul>
+
+        </div>
+        <div class="icerik">
+            <div class="icerik-sol">
+                <h1 style="text-align: center;">Diziler</h1>
+                <p>
+                    DİZİ NEDİR?<BR><BR>
+                    Dizi özel bir çeşit değişkendir, tek seferde birden fazla değeri barındırabilir.
+
+                    Eğer bir listeniz varsa (örneğin araba isimleri listesi), her bir araba ismini değişkenlerde şöyle saklayabilirdiniz: 
+<br><br>
+                    var araba1 = "araba1";<br>
+                    var araba2 = "araba2";<br>
+                    var araba3 = "araba3";<br>
+
+                    Ancak, araba isimleri içinden tek bir tanesini bulmanız gerektiğinde ne yapacaktınız?<br>
+                     Ve 3 tane değil de 300 araba ismi olsaydı?<br><br>
+
+                    Çözümü bir dizi kullanmak!<br>
+
+                    Bir dizi tek bir isim altında birden fazla değeri saklayabilir, ve siz de index numarası yardımıyla istediğiniz değere ulaşabilirsiniz.<BR><BR>
+                    DİZİ OLUŞTURMAK<BR><BR>
+                    Bir JavaScript Dizisi oluşturmanın en kolay yolu köşeli parantezleri kullanmaktır.
+
+                    Yazımı şu şekildedir:<BR><BR>
+
+                    var dizi_ismi = [oge1, oge2, ...];  <BR>    
+
+<BR>
+                    
+                    Örnek<BR>
+                    var arabalar = ["araba1", "araba2", "araba3"];<BR><BR>
+                        Boşluklar ve satır araları önemli değildir. Dizi oluşturma birkaç satırda birden de yapılabilir:<BR>
+
+                        Örnek<BR>
+                        var arabalar = [ <BR>
+                        "araba1",<BR>
+                        "araba2",<BR>
+                        "araba3"<BR>
+                        ];<BR><BR>
+
+                            JAVASCRIPT "new" ANAHTAR KELİMESİNİ KULLANMAK<BR><BR>
+                            Bu örnek bir dizi oluşturur ve içine değerler atar:<BR>
+                            
+                            Örnek<BR>
+                            var arabalar = new Array("araba1", "araba2", "araba3");<BR><BR>
+                            
+                            Yukarıdaki iki örnek de aynı işlemi yapar. new Array() yöntemini kullanmaya gerek yoktur.
+                            Kolaylık, okunabilirlik ve işlem hızı daha iyi olduğu için birinci yöntemi kullanmalısınız.
+                        <BR><BR>
+                            DİZİNİN ELEMANLARINA ERİŞME<BR><BR>
+                            Dizi elemanlarına erişmek için dizideki index numaralarını kullanırız.
+                            
+                            Bu örnek satır arabalar dizisinin ilk elemanına erişir:<BR>
+                            
+                            Örnek<BR>
+                            var isim = arabalar[0];<BR><BR>
+                            
+                            
+                             
+                            Örnek<BR>
+                            var arabalar = ["araba1", "araba2", "araba3"];<BR>
+                            document.getElementById("demo").innerHTML = arabalar[0];<BR><BR>
+                                Not: Dizi index numaraları 0'dan başlar.
+
+                                [0] birinci elamandır. [1] ise ikinci eleman.<BR><BR>
+                                    BÜTÜN DİZİYE ERİŞMEK<BR><BR>
+                                    JavaScript ile tüm diziye birden erişmek için sadece dizinin adını kullanmak yeterlidir:
+                                    <BR>
+                                    Örnek<BR>
+                                    var arabalar =["araba1", "araba2", "araba3"];<BR>
+                                    document.getElementById("demo").innerHTML = arabalar;<BR>
+                                        <BR>
+                                            DİZİLER OBJEDİR<BR><BR>
+                                            Diziler özel bir tür objedir. JavaScript typeof özelliği diziler için kullanıldığında geriye "object" değerini döndürür.
+                                            
+                                            Ama JavaScript dizileri en iyi dizi olarak ifade edilebilirler.
+                                            
+                                            Diziler elemanlarına erişmek için numaraları kullanırlar. Bu örnekte insan[0], Ali değerini döndürür:
+                                            <BR><BR>
+                                            
+                                             
+                                            Örnek<BR>
+                                            var insan = ["Ali", "Pak", 46];<BR><BR>
+                                                DİZİ ELEMANLARI OBJE OLABİLİR<BR><BR>
+                                                JavaScript değişkenleri obje olabilir. Diziler özel bir çeşit objedir.
+                                                
+                                                Bu yüzden, farklı türdeki değişkenleri aynı dizi içerisinde kullanabilirsiniz.
+                                                
+                                                Dizi içerisinde objeleriniz olabilir. Dizi içerisinde fonksiyonlarınız olabilir. Dizi içerisinde diziniz de olabilir: 
+                                                <BR>
+                                                yeniDizi[0] = Date.now;<BR>
+                                                yeniDizi[1] = yeniFonksiyon;<BR>
+                                                yeniDizi[2] = arabalar;<BR><BR>
+                        
+                </p>
+
+            </div>
+            <div class="icerik-sag">
+                <h1>Kategoriler</h1>
+                <ul>
+                
+                    <li><a href="#" > CSS Dersleri</a></li>
+                    <li><a href="#" > HTML Dersleri</a></li>  
+                    <li><a href="#" > PHP Dersleri</a></li> 
+                    <li><a href="#" > Youtube Dersleri</a></li> 
+                       
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="alt">
+
+        </div>
+    </div>
+    
+</body>
+</html>

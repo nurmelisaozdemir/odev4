@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="genel">
+
+        
+        <div class="ust">
+            <img src="img/html.png" style="width:180px"/>
+            <h1 style="text-align: center;" >   JAVASCRIPT   </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                
+                <li><a href="kullanıcıFormu.html">Kullanıcı Formu</a></li>
+                <li><a href="alisverisListesi.html">Alışveriş Listesi</a></li>
+                <li><a href="element.html">Element Ekle</a></li>
+                <li><a href="index.html" > Login</a></li>
+                <li><a href="syntax.html" > Syntax</a></li>  
+                <li><a href="degiskenler.html" > Variables</a></li> 
+                <li><a href="operator.html" > Operators</a></li> 
+                <li><a href="arithmetic.html" > Arithmetic</a></li>
+                <li><a href="datatypes.html" > Data Types</a></li>
+                <li><a href="function.html" > Function structure</a></li>    
+                <li><a href="events.html" >Events</a></li>    
+                <li><a href="loops.html" > Loops</a></li> 
+                <li><a href="diziler.html">Diziler</a></li>      
+                <li><a href="ifkosul.html">İf-Koşul Yapısı</a></li>
+                
+                
+            </ul>
+
+        </div>
+        <div class="icerik">
+            <div class="icerik-sol">
+                <h1 style="text-align: center;"> FONKSİYON</h1>
+                <p> 
+                    Bir JavaScript fonksiyonu, özel bir işlemi yerine getirmek için tasarlanmış bir blok koddur.
+
+                    Bir JavaScript fonksiyonu farklı bir kod tarafından çağrıldığı zaman çalışır.<BR><BR>
+
+                    Örnek<BR><BR>
+                    function toplama(sayi1, sayi2) {<BR>
+                        return sayi1 + sayi2;<BR><BR>
+                        JAVASCRIPT FONKSİYON SÖZDİZİMİ<BR>
+                        Bir JavaScript fonksiyonu oluşturmak için function anahtar kelimesini kullanırız. Daha sonra bu fonksiyona bir ad veririz.
+
+                        Fonksiyona ad verildikten, parentez açıp kapatılır () ve en sonunda {} parantezleri arasına fonksiyon çağrıldığında çalışacak kod blogunu yazarız.
+
+                        Fonksiyon adı harf, sayı, alt çizgi ve dolar işaretini barındırabilir.
+
+                        Fonksiyon eğer parametre alıyorsa fonksiyon adından sonra () parantezleri arasına parametreler girilir: (parametre1, parametre2)<BR>
+
+                        Örnek<BR>
+                        function fonksiyonAdi(parametre1, parametre2)<BR>
+                        {<BR>
+                        //fonksiyon çağrıldığında çalıştırılacak kod bloğu<BR>
+                        }<BR>
+                        Fonksiyon parametreleri, fonksiyon çağrıldığında gönderilecek ve fonksiyon tarafından işlenecek verilerdir.<BR>
+
+                        Örneğin, fonksiyona gönderilen iki sayıyı toplayacak bir fonksiyon yazmak istiyorsak, gönderilecek değerler için fonksiyona parametre ekleriz.
+
+                        Fonksiyon bu parametrelere atanan değerleri alır ve kod bloğu içinde bunları işler.
+
+                        Fonksiyon parametreleri {} içinde yerel değişkenler gibi kullanılır.<BR><BR>
+                            JAVASCRIPT FONKSİYONU ÇAĞIRMAK/ÇALIŞTIRMAK<BR><BR>
+                        Oluşturulan JavaScript fonksiyonu özel bir şekilde tanımlanmadıysa kendi başına çalışmaz. Fonksiyonu çalıştırmak için onu çağırmanız gerekir.
+
+                        Bir Fonksiyon şu durumlarda çalışır:<BR><BR>
+
+                        -Bir olay tetiklendiğinde fonksiyon çalıştırılabilir (örneğin kullanıcının bir butona tıklaması bir olaydır)<BR>
+                        -Başka bir JavaScript kodu tarafından fonksiyon çalıştırılabilir.<BR>
+                        -Otomatik olarak / kendi kendini  çağırarak<BR><BR>
+                            () OPERATORÜ GONKSİYONU ÇAĞIRIR<BR><BR>
+                            JavaScript fonksiyonun sadece adını yazarsanız geriye fonksiyon nesnesi döner.
+
+                            Fonksiyonu () simgeleri ile çağırırsanız size sonuç döner.<BR><BR>
+
+                            Örnek<BR><BR>
+
+                            function carpma(sayi1, sayi2) {<BR>
+                                return sayi1 * sayi2;<BR>
+                            }<BR>
+                            document.getElementById("demo").innerHTML = carpma;<BR><BR>
+                            Fonksiyonlar Değişkene Doğrudan Değer Atamak İçin Kullanılabilir<BR><BR>
+                            Bir fonksiyonun dönen değeri doğrudan bir değişkene atanabilir.
+
+                            Bunun yanında fonksiyon string birleştirme ya da matematiksel işlemlerde doğrudan da kullanılabilir.<BR><BR>
+
+                            Örnek<BR><BR>
+                            // Fonksiyonun dönen değerini bir değişkene atayabilirsiniz<BR>
+                            var sonuc = carpma(4,3);<BR>
+                            var metin = "Bu işlemin sonucu:" + sonuc;<BR>
+
+                            //Veya doğrudan yapmak istediğiniz işlemde kullanabilirsiniz<BR>
+
+                            var metin = = "Bu işlemin sonucu:" + carpma(4,3);<BR>
+                        
+
+
+                  
+                
+                </p>
+
+            </div>
+            <div class="icerik-sag">
+                <h1>Kategoriler</h1>
+                <ul>
+                
+                    <li><a href="#" > CSS Dersleri</a></li>
+                    <li><a href="#" > HTML Dersleri</a></li>  
+                    <li><a href="#" > PHP Dersleri</a></li> 
+                    <li><a href="#" > Youtube Dersleri</a></li> 
+                       
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="alt">
+
+        </div>
+    </div>
+    
+</body>
+</html>

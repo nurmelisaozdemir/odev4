@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Ekle</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        input{
+            padding:8px 30px;
+            margin-right:10px;
+        }
+        button{
+            background: #5f27cd;
+            color:#fff;
+            border:none;
+            padding:10px 30px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="genel">
+
+        
+        <div class="ust">
+            <img src="img/html.png" style="width:180px"/>
+            <h1 style="text-align: center;" >   JAVASCRIPT   </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                
+                <li><a href="kullanıcıFormu.html">Kullanıcı Formu</a></li>
+                <li><a href="alisverisListesi.html">Alışveriş Listesi</a></li>
+                <li><a href="element.html">Element Ekle</a></li>
+                <li><a href="index.html" > Login</a></li>
+                <li><a href="syntax.html" > Syntax</a></li>  
+                <li><a href="degiskenler.html" > Variables</a></li> 
+                <li><a href="operator.html" > Operators</a></li> 
+                <li><a href="arithmetic.html" > Arithmetic</a></li>
+                <li><a href="datatypes.html" > Data Types</a></li>
+                <li><a href="function.html" > Function structure</a></li>    
+                <li><a href="events.html" >Events</a></li>    
+                <li><a href="loops.html" > Loops</a></li> 
+                <li><a href="diziler.html">Diziler</a></li>      
+                <li><a href="ifkosul.html">İf-Koşul Yapısı</a></li> 
+                
+                
+            </ul>
+
+        </div>
+        <div class="icerik">
+            <div class="icerik-sol">
+                <h1 style="text-align: center;"> ELEMENT EKLE</h1>
+                <input type="text" name="" id="urun"><button id="ekle">Ekle</button><br><br>
+                <br>
+                <ul id="liste">
+                </ul>
+                <script>
+                    const urun =document.querySelector("#urun");
+                    const ekle =document.querySelector("#ekle");
+                    const liste =document.querySelector("#liste");
+                    var secilen;
+                    ekle.onclick=function(){
+                        let li=document.createElement("li");
+                        li.textContent=urun.value;
+             
+                        liste.appendChild(li);
+             
+                        urun.value="";
+                        urun.focus();
+                    }
+                    
+                    
+                </script>
+
+            </div>
+            <div class="icerik-sag">
+                <h1>Kategoriler</h1>
+                <ul>
+                
+                    <li><a href="#" > CSS Dersleri</a></li>
+                    <li><a href="#" > HTML Dersleri</a></li>  
+                    <li><a href="#" > PHP Dersleri</a></li> 
+                    <li><a href="#" > Youtube Dersleri</a></li> 
+                       
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="alt">
+
+        </div>
+    </div>
+    
+</body>
+</html>

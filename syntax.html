@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="genel">
+
+        
+        <div class="ust">
+            <img src="img/html.png" style="width:180px"/>
+            <h1 style="text-align: center;" >   JAVASCRIPT   </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                
+                <li><a href="kullanıcıFormu.html">Kullanıcı Formu</a></li>
+                <li><a href="alisverisListesi.html">Alışveriş Listesi</a></li>
+                <li><a href="element.html">Element Ekle</a></li>
+                <li><a href="index.html" > Login</a></li>
+                <li><a href="syntax.html" > Syntax</a></li>  
+                <li><a href="degiskenler.html" > Variables</a></li> 
+                <li><a href="operator.html" > Operators</a></li> 
+                <li><a href="arithmetic.html" > Arithmetic</a></li>
+                <li><a href="datatypes.html" > Data Types</a></li>
+                <li><a href="function.html" > Function structure</a></li>    
+                <li><a href="events.html" >Events</a></li>    
+                <li><a href="loops.html" > Loops</a></li> 
+                <li><a href="diziler.html">Diziler</a></li>      
+                <li><a href="ifkosul.html">İf-Koşul Yapısı</a></li>
+                 
+                 
+                
+            </ul>
+
+        </div>
+        <div class="icerik">
+            <div class="icerik-sol">
+            
+                <h1 style="text-align: center;"> SYNTAX</h1>
+                <p> 
+                    JavaScript sözdizimi, JavaScript uygulamalarının nasıl oluşturulması gerektiğini ifade eden bir takım kurallardır.
+                    JavaScript ile kod yazarken uygulamanız gereken kuralları ifade eder.
+                    <BR>
+                    JAVASCRIPT UYGULAMALARI<R><BR></R>
+                    Bir uygulama ya da program olarak adlandırılan şey aslında bilgisayar tarafından çalıştırılan bir talimatlar listesidir.<BR>
+
+                    Program içinde "Bu butona tıklandığında git şu işlemleri yap" gibi talimatlar yazarız.<BR>
+
+                    Bir programlama dilinde, program içindeki bu talimatlar ifade (Statement) olarak adlandırılır.<BR>
+
+                    JavaScript bir programlama dilidir.<BR>
+
+                    JavaScript içindeki bildirim noktalı virgül ile sonlandırılır:<BR><BR>
+                       JAVASCRIPT DEĞİŞKEN TANIMLAMAK (Variable)<BR><BR>
+                        Değişken (Variable) nedir?<BR>
+
+                        Programlama dillerinde sıkça verileri bellek yani ramde saklamamız gerekir. Ram işlem yapmak için son derece hızlı bir donanımdır.
+
+                        Bilgisayar belleğini içinde milyonlarca çekmece bulunan bir dolaba benzetebilirsiniz. Bellek, filmlerde gördüğünüz bankalarda üzerinde numaralar olan saklama kasaları gibidir.
+
+
+                        
+                        Biz bu kasalara isim vererek içinde veri sakayabiliriz. Saklanan veri 10,20, 30 gibi sayı olduğu gibi "uzmanim", "akademi" gibi kelime ve metinlerde olabilir.
+
+                        Basitçe, bellek içindeki bir alanın adlandırılmasına ve sizin için ayrılmasına değişken tanımlamak denir. Kasaya verdiğiniz, yani bellek alanına verdiğiniz ad ise değişken olarak adlandırılır.<Br><Br>
+                            JavaScript programlama dilinde var anahtar kelimesi ile değişken tanımlanır. var telefon; dediğinizde telefon adinda bir değişken tanımlarsınız. Bilgisayar bellekte size bir yer ayırır ve adına telefon der.
+
+                            Burada bir telefon numarası saklamak isterseniz telefon = 444444; gibi  değişkene değer ataması yapabilirsiniz.
+                            <BR><BR>
+                            Örnek<BR>
+                            var telefon;<BR>
+                            telefon = 444444;<BR>
+                            
+                            // Yorum alanı: değişken tanımlama ve değer atama tek satırda da yapılabilir.<BR>
+                            // Örneğin:<BR>
+                            
+                            var site ="uzmanim akademi";<BR><BR>
+                               JAVASCRİPT OPERATORLER<BR><BR>
+                                JavaScript  +, -, *, / gibi operatörler kullanır. Bu operatörler sayesinde matematiksel işlem yapmak mümkün olur.
+                                <BR>
+                                Örneğin (2 + 3) * 10 işlemi 50 sonucunu verir.<Br><BR>
+                                
+                                Örnek<BR>
+                                (2 + 3) * 10;<BR><BR>
+                                
+                                JavaScript eşittir simgesini atama operatörü olarak kullanır. Bir değişkene değer verirken eşittir (=) işaretini kullanırız.<BR><BR>
+                                Örnek<BR>
+                                var sayi1;<BR>
+                                sayi1 = 10;<BR><BR>
+                                   JAVASCRIPT İLE YORUM YAZMAK<BR><BR>
+                                    Herhangi bir kod blogunun içine açıklama, yorum yazmak için // veya /* ve */ simgeleri kullanılır.
+                                    <BR>
+                                    Tek satır yorum için // çok satır yorum için /* ve */ kullanılır.
+                                    <BR>
+                                    Başına // konan JavaScript kodu çalıştırılmaz.
+                                    <BR><BR>
+                                    Örnek<BR>
+                                    var sayi= 10; // Örnek yorum<BR>
+                                    // var sayi = 20; bu satır hiç çalıştırılmayacak<BR><BR>
+
+                                        JAVASCRIPT İLE DEĞİŞKEN OLUŞTURUKEN DİKKAT EDİLMESİ GEREKENLER<BR><BR>
+                                        JavaScript değişkenlerini oluştururken, değişkenlere isim verirken dikkat edilmesi gereken bazı kurallar vardır:<BR><BR>
+                                        
+                                        Değişken isimlerinde Türkçe karakter kullanmayın. Bu soruna yol açabilir. ı,İ,ö,ü,ğ,ş,ç karakterlerini kullanayın.<BR>
+                                        Bir değişkenin ilk karakteri, harf, alt çizgi (_) veya dolar işareti olabilir ($)<BR>
+                                        Bir değişkenin ilk karakteri sayı olamaz (1sayi geçersizdir fakat sayi1 geçerlidir)<BR>
+                                        JavaScript büyük-küçük harf duyarlıdır!<BR>
+                                        
+                                        JavaScript programlama dilinde büyük-küçük harf ayrımı vardır.<BR>
+                                        
+                                        Yani sayi ve Sayi aynı değildir.<BR>
+                                        
+                                        JAVASCRİPT DEĞİŞKEN ADLANDIRILIRKEN KULLANILAN YAZIM SİTİLLERİ<BR><BR>
+                                        Programcılar değişken adlarını yazarken farklı stiller kullanırlar. Genelde 4 farklı stil kullanılır:<BR><BR>
+                                        
+                                        Tire ile adlandırma: Bu yöntemde değişken adındaki her kelime tire simgesi ile ayrılır: ad-soyad<BR>
+                                        Alt Çizgi ile adlandırma: Bu yöntemde değişken adını oluşturan her kelime alt çizgi ile ayrılır: ad_soyad<BR>
+                                        Camel Case (Pascal Case) / Baş Harfi Büyük: Bu yöntemde her kelimenin ilk harfi büyük yazılır:AdSoyad<BR>
+                                        Camel Case (Pascal Case) / ilk Harfi Küçük: Bu yöntemde değişken adının ilk harfi küçük sonraki her kelimenin ilk harfi büyük yazılır:adSoyad<BR>
+                                         Bu değişken adlandırma tekniği JavaScript programcıları tarafından çokca kullanılır.<BR><BR>
+                
+                </p>
+
+            </div>
+            <div class="icerik-sag">
+                <h1>Kategoriler</h1>
+                <ul>
+                
+                    <li><a href="#" > CSS Dersleri</a></li>
+                    <li><a href="#" > HTML Dersleri</a></li>  
+                    <li><a href="#" > PHP Dersleri</a></li> 
+                    <li><a href="#" > Youtube Dersleri</a></li> 
+                       
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="alt">
+
+        </div>
+    </div>
+    
+</body>
+</html>

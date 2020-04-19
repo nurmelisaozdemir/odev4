@@ -1,0 +1,110 @@
+body{
+    background:pink;
+}
+#genel{
+    width:990px;
+    height:auto;
+    margin:auto;
+}
+.ust{
+    
+    width:990px;
+    height:150px;
+    background:rgb(18, 60, 100);
+    
+}
+.ust img{
+    margin:20px;
+    padding: 20px;
+}
+.ust h1{
+    
+    float: right;
+    padding:25px;
+    margin:30px;
+    width:560px;
+    background:rgb(214, 218, 21);
+    border:1px solid beige;
+}
+.menu{
+    margin-top:20px;
+    width:1400px;
+    height:80px;
+    background:palevioletred;
+    margin-bottom:20px;
+}
+.menu ul li{
+    list-style:none;
+    float:left;
+    padding:10px;
+    margin:6px;
+    width:60px;
+    background:rgb(87, 129, 168);
+    border:1px solid palevioletred;
+}
+.menu ul li:hover{
+    background:rgb(6, 14, 22);
+}
+.menu ul li a{
+    text-decoration:none;
+    font:bold 13 px verdana;
+}
+.icerik{
+    width:990px;
+    height:auto;
+    
+}
+
+.icerik-sol{
+    width: 620px;
+    min-height:450px;
+    background:palevioletred;
+    float:left;
+    border-radius: 10px;
+    box-shadow:3px 3px 3px;
+    
+}
+.icerik-sag{
+    width:300px;
+    min-height:200px;
+    background: palevioletred;
+    float:left;
+    margin-left: 70px;
+}
+.icerik-sag h1{
+    border:1px solid rgb(18, 60, 100);
+    background: rgb(87, 129, 168);
+    text-align: center;
+    margin:0px;
+    font:bold 30px arial;
+}
+
+.icerik-sag ul li{
+    width:270px;
+    border:1px solid rgb(87, 129, 168);
+    margin:5px;
+    padding:10px;
+    background: rgb(87, 129, 168);
+    list-style:none;
+}
+.icerik-sag ul li a{
+    text-decoration: none;
+    font:bold 15px rgb(18,60,100);
+    
+
+}
+.icerik-sag ul li:hover{
+    background:rgb(18, 60, 100);
+}
+.icerik-sag ul{
+    margin:0px;
+    padding:0px;
+}
+.alt{
+    margin-top:20px;
+    width:990px;
+    height:60px;
+    background: rgb(18, 60, 100);
+    float:left;
+    margin-bottom:20px;
+}
